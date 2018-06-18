@@ -5,7 +5,7 @@
 
 انسخ الامر التالي وقم بوضعه في الوحدة الطرفية :
 
-`sudo wget  https://github.com/abdomuftah/Ubuntu-Script/ubuntu_script.sh `
+`sudo wget  https://github.com/abdomuftah/Ubuntu-Script/blob/master/ubuntu_script.sh`
 
 
 ## لتشغيل السكربت : 
