@@ -9,7 +9,6 @@ echo "*      LAMP server and phpMyAdmin        *"
 echo "******************************************"
 echo ""
 #
-read -p 'Set MySQL Password: ' mysql_password
 read -p 'Set Web Directory (Example: /var/www/html) ' directory
 read -p 'Set Web Domain (Example: 127.0.0.1 [Not trailing slash!]) ' domain
 #
