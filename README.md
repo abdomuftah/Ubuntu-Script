@@ -8,7 +8,9 @@
 `sudo wget  https://github.com/abdomuftah/Ubuntu-Script/blob/master/ubuntu_script.sh`
 
 
-## لتشغيل السكربت : 
+## لتشغيل السكربت :
+
+فقط قم بنسخ الامر التالي والصقه بالوحدة الطرفيه :
 
 `sh ubuntu_script.sh `
 
@@ -31,12 +33,16 @@
 
 ## Script for Ubuntu VPSs Users :
 
+
 copy the command and paste it in the terminal :
 
 `sudo wget  https://github.com/abdomuftah/Ubuntu-Script/blob/master/ubuntu_script.sh`
 
 
-## to launch the script just copy this command and paste it in the terminal again : 
+## to launch the script :
+
+
+just copy this command and paste it in the terminal again : 
 
 `sh ubuntu_script.sh `
 
