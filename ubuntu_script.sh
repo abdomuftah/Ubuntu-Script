@@ -10,7 +10,7 @@ echo "******************************************"
 echo ""
 #
 read -p 'Set Web Directory (Example: /var/www/html) ' directory
-read -p 'Set Web Domain (Example: 127.0.0.1 [Not trailing slash!]) ' domain
+read -p 'Set Web Domain (Example: example.example.com [Not trailing slash!]) ' domain
 #
 sudo apt-get update
 sudo apt-get upgrade -y
@@ -75,6 +75,8 @@ echo "Secureing with Let's Encrypt"
 sudo certbot --apache -d $domain
 #
 sudo certbot renew --dry-run
+#
+clear
 #
 echo "your PHP Ver is :"
 php -v 
