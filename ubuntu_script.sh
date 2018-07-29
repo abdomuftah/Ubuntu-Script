@@ -9,8 +9,6 @@ echo "*      LAMP server and phpMyAdmin        *"
 echo "******************************************"
 echo ""
 #
-read -p 'Root Password (past your user/root password ) ' rootpw
-read -p 'Set Web Directory (Example: /var/www/html) ' directory
 read -p 'Set Web Domain (Example: 127.0.0.1 [Not trailing slash!]) ' domain
 #
 sudo apt-get update
@@ -47,15 +45,15 @@ sudo apt update
 #
 sudo apt-get install php7.2 -y
 sudo apt install php7.2 php7.2-cli php7.2-gd php7.2-mysql php7.2-pdo php7.2-mbstring php7.2-tokenizer php7.2-bcmath php7.2-xml php7.2-fpm php7.2-curl php7.2-zip tar redis-server sed composer 
-systemctl restart apache2 -$rootpw
+systemctl restart apache2 
 #
 echo "Install and Secure phpMyAdmin"
 sudo apt-get update
-sudo apt-get install phpmyadmin php7.2-mbstring php-gettext -y
+sudo apt-get install phpmyadmin php7.2-mbstring php-gettext
 sudo apt-get update
 #
 a2enmod rewrite
-service apache2 restart -$rootpw
+service apache2 restart 
 #
 clear
 #
