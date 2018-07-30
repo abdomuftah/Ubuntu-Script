@@ -5,7 +5,7 @@
 
 انسخ الامر التالي وقم بوضعه في الوحدة الطرفية :
 
-`sudo wget https://github.com/abdomuftah/Ubuntu-Script/raw/master/ubuntu_script.sh.tar && tar -xvf ubuntu_script.sh.tar && rm ubuntu_script.sh.tar`
+`sudo wget https://github.com/abdomuftah/Ubuntu-Script/raw/master/ubuntu_script.tar && tar -xvf ubuntu_script.tar && rm ubuntu_script.tar`
 
 
 ## لتشغيل السكربت :
