@@ -5,7 +5,7 @@
 
 انسخ الامر التالي وقم بوضعه في الوحدة الطرفية :
 
-`sudo wget https://github.com/abdomuftah/Ubuntu-Script/raw/master/ubuntu_script.tar && tar -xvf ubuntu_script.tar && sudo rm ubuntu_script.tar`
+`sudo wget https://git.io/fARE7 -O ubuntu_script.sh`
 
 
 ## لتشغيل السكربت :
@@ -36,7 +36,7 @@
 
 copy the command and paste it in the terminal :
 
-`sudo wget https://github.com/abdomuftah/Ubuntu-Script/raw/master/ubuntu_script.sh.tar && tar -xvf ubuntu_script.sh.tar && rm ubuntu_script.sh.tar`
+`sudo wget https://git.io/fARE7 -O ubuntu_script.sh`
 
 
 ## to launch the script :
