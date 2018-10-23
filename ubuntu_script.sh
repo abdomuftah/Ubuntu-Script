@@ -43,7 +43,7 @@ sudo systemctl stop mysql.service
 sudo systemctl start mysql.service
 sudo systemctl enable mysql.service
 #
-sudo apt -y install libapache2-mod-php php-common php-mbstring php-xmlrpc php-soap php-gd php-xml php-intl php-mysql php-cli php-zip php-curl php7.2-pdo php7.2-tokenizer php7.2-bcmath php7.2-fpm tar redis-server sed composer 
+sudo apt install libapache2-mod-php php-common php-mbstring php-xmlrpc php-soap php-gd php-xml php-intl php-mysql php-cli php7.2-zip php7.2-curl php7.2-pdo php7.2-tokenizer php7.2-bcmath php7.2-fpm tar redis-server sed composer 
 sudo systemctl restart apache2.service
 #
 echo "Install and Secure phpMyAdmin"
