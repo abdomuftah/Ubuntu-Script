@@ -24,6 +24,8 @@ sudo add-apt-repository ppa:ondrej/php -y
 sudo add-apt-repository ppa:certbot/certbot -y
 sudo add-apt-repository -y ppa:chris-lea/redis-server
 sudo apt-get install -y screen nano curl git zip unzip
+sudo apt-get install -y libmysqlclient-dev python-dev python-pip
+
 #
 sudo apt-get update && sudo apt-get upgrade
 #
@@ -43,7 +45,7 @@ sudo systemctl stop mysql.service
 sudo systemctl start mysql.service
 sudo systemctl enable mysql.service
 #
-sudo apt install libapache2-mod-php php-common php-mbstring php-xmlrpc php-soap php-gd php-xml php-intl php-mysql php-cli php7.2-zip php7.2-curl php7.2-pdo php7.2-tokenizer php7.2-bcmath php7.2-fpm tar redis-server sed composer 
+sudo apt install php7.3 libapache2-mod-php7.3 php7.3-common php7.3-mbstring php7.3-xmlrpc php7.3-soap php7.3-gd php7.3-xml php7.3-intl php7.3-mysql php7.3-cli php7.3-zip php7.3-curl php7.3-pdo php7.3-tokenizer php7.3-bcmath php7.3-fpm php7.3-imagick php7.3-recode php7.3-tidy tar redis-server sed composer 
 sudo systemctl restart apache2.service
 #
 echo "Install and Secure phpMyAdmin"
