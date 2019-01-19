@@ -17,16 +17,13 @@
 
 ## فيديو الشرح : 
 
-** Comming Soon **
-
-
-
+<a href="https://www.youtube.com/watch?v=ptLtiTAfc_A">
+<img alt="FirstTimeOnly" src="https://i.ytimg.com/vi/ptLtiTAfc_A/hqdefault.jpg?sqp=-oaymwEjCPYBEIoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBKgN3q0qmToaRzY5v80LjgpprOtA" />
+</a>
 
 
 
 ===========================================================
-
-
 
 
 
@@ -49,4 +46,6 @@ just copy this command and paste it in the terminal again :
 
 ## video tutorial : 
 
-** Comming Soon **
+<a href="https://www.youtube.com/watch?v=ptLtiTAfc_A">
+<img alt="FirstTimeOnly" src="https://i.ytimg.com/vi/ptLtiTAfc_A/hqdefault.jpg?sqp=-oaymwEjCPYBEIoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBKgN3q0qmToaRzY5v80LjgpprOtA" />
+</a>
