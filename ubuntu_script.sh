@@ -77,6 +77,11 @@ sudo apt update -y && sudo apt upgrade -y
 sudo apt-get update && sudo apt-get upgrade
 sudo apt-get install phpmyadmin php-gettext
 #
+echo "=================================="
+echo "Update php.ini file "
+echo "=================================="
+wget https://raw.githubusercontent.com/abdomuftah/Ubuntu-Script/master/php.ini && mv -f php.ini /etc/php/7.3/apache2/
+#
 sudo a2enmod rewrite
 sudo systemctl restart apache2.service
 systemctl restart apache2
