@@ -24,6 +24,7 @@ sudo apt-get install python-software-properties -y
 sudo apt-add-repository ppa:webupd8team/java -y
 sudo add-apt-repository ppa:ondrej/php -y
 sudo add-apt-repository ppa:certbot/certbot -y
+sudo add-apt-repository ppa:phpmyadmin/ppa
 sudo add-apt-repository -y ppa:chris-lea/redis-server
 sudo apt-get install -y screen nano curl git zip unzip ufw python-certbot-apache
 sudo apt-get install -y libmysqlclient-dev python-dev python-pip
@@ -121,6 +122,6 @@ echo "your MSQL Ver is :"
 mysqladmin -u root -p version 
 echo ""
 echo "thanks for installing this script !!"
-echo "https://twitter.com/ScarNaruto"
+echo "https://twitter.com/Scar_Naruto"
 #
 exit
