@@ -12,6 +12,7 @@ echo "*      Domain with Let's Encrypt         *"
 echo "******************************************"
 echo ""
 #
+#read -p 'Set Web Directory (Example: /var/www/html) ' directory
 read -p 'Set Web Domain (Example: 127.0.0.1 [Not trailing slash!]) ' domain
 #
 sudo apt update -y && sudo apt upgrade -y
@@ -19,17 +20,24 @@ sudo apt-get update && sudo apt-get upgrade
 sudo apt dist-upgrade && sudo apt autoremove -y
 sudo apt-get install default-jdk -y
 sudo apt-get install software-properties-common -y
-sudo apt-get install python-software-properties -y
 sudo apt-add-repository ppa:webupd8team/java -y
 sudo add-apt-repository ppa:ondrej/php -y
 sudo add-apt-repository ppa:phpmyadmin/ppa -y
+sudo add-apt-repository ppa:deadsnakes/ppa -y
 sudo add-apt-repository ppa:certbot/certbot -y
 sudo add-apt-repository -y ppa:chris-lea/redis-server
-sudo apt-get install -y screen nano curl git zip unzip ufw python-certbot-apache
-sudo apt-get install -y python3.7 libmysqlclient-dev python3-dev python3-pip
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 #
 sudo apt update && sudo apt upgrade
 sudo apt-get update && sudo apt-get upgrade
+#
+echo "=================================="
+echo " install some tools to help you more :) "
+echo "=================================="
+sudo apt-get install -y screen nano curl git zip unzip ufw python-certbot-apache
+sudo apt-get install -y python3.7 libmysqlclient-dev python3-dev python3-pip
+python3 get-pip.py
+python3 -m pip install Django
 #
 echo "=================================="
 echo "installing Apache2"
@@ -111,12 +119,7 @@ echo "your PHP Ver is :"
 php -v 
 #
 echo ""
-echo "thanks for installing this script !!"
+echo "You Can Thank Me On :) "
 echo "https://twitter.com/Scar_Naruto"
 #
-#
 exit
-
-
-
-
