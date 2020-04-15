@@ -20,11 +20,17 @@
 عند انتهاء التثبيت قم بكتابة الاوامر التالية لتفعيل phpMyAdmin :
 
 `sudo mysql -u root `
+
 `use mysql; `
+
 `update user set plugin='' where User='root';`
+
 `flush privileges; `
+
 `exit;`
+
 `service mysql restart `
+
 
 
 
@@ -61,10 +67,15 @@ just copy this command and paste it in the terminal again :
 After Finish installing add this commands to enable phpMyAdmin :
 
 `sudo mysql -u root `
+
 `use mysql; `
+
 `update user set plugin='' where User='root';`
+
 `flush privileges; `
+
 `exit;`
+
 `service mysql restart `
 
 
