@@ -69,7 +69,7 @@ sudo apt update -y && sudo apt upgrade -y
 sudo apt-get update && sudo apt-get upgrade
 #
 echo "=================================="
-echo "installing PHP 7.3 + modules"
+echo "installing PHP 7.4 + modules"
 echo "=================================="
 sudo apt install php7.4 libapache2-mod-php7.4 php7.4-common php7.4-mbstring php7.4-xmlrpc php7.4-soap php7.4-gd php7.4-xml php7.4-intl php7.4-mysql php7.4-cli php7.4-zip php7.4-curl php7.4-pdo php7.4-tokenizer php7.4-bcmath php7.4-fpm php7.4-imagick php7.4-tidy tar redis-server sed composer
 sudo systemctl restart apache2.service
