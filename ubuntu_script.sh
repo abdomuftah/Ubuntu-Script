@@ -119,7 +119,7 @@ sudo apt update -y && sudo apt upgrade -y
 sudo apt-get update && sudo apt-get upgrade -y
 sudo systemctl restart apache2.service
 #
-#clear
+clear
 #
 echo "your PHP Ver is :"
 php -v 
