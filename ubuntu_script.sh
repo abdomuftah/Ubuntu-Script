@@ -12,30 +12,33 @@ echo "*      Domain with Let's Encrypt         *"
 echo "******************************************"
 echo ""
 #
-#read -p 'Set Web Directory (Example: /var/www/html) ' directory
 read -p 'Set Web Domain (Example: 127.0.0.1 [Not trailing slash!]) ' domain
 #
-sudo apt update -y && sudo apt upgrade -y
-sudo apt-get update && sudo apt-get upgrade
-sudo apt dist-upgrade && sudo apt autoremove -y
+sudo apt update
+sudo apt upgrade -y
+sudo apt-get update 
+sudo apt-get upgrade -y
+sudo apt dist-upgrade
+sudo apt autoremove -y
 sudo apt-get install default-jdk -y
 sudo apt-get install software-properties-common -y
 sudo apt-add-repository ppa:webupd8team/java -y
 sudo add-apt-repository ppa:ondrej/php -y
 sudo add-apt-repository ppa:phpmyadmin/ppa -y
 sudo add-apt-repository ppa:deadsnakes/ppa -y
-sudo add-apt-repository ppa:certbot/certbot -y
 sudo add-apt-repository -y ppa:chris-lea/redis-server
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 #
-sudo apt update && sudo apt upgrade
-sudo apt-get update && sudo apt-get upgrade
+sudo apt update
+sudo apt upgrade -y
+sudo apt-get update 
+sudo apt-get upgrade -y
 #
 echo "=================================="
 echo " install some tools to help you more :) "
 echo "=================================="
-sudo apt-get install -y screen nano curl git zip unzip ufw python-certbot-apache
-sudo apt-get install -y python3.7 libmysqlclient-dev python3-dev python3-pip
+sudo apt-get install -y screen nano curl git zip unzip ufw certbot python3-certbot-apache
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+sudo apt-get install -y python3.7 libmysqlclient-dev python3-dev python3-pip 
 python3 get-pip.py
 python3 -m pip install Django
 #
@@ -49,37 +52,45 @@ sudo systemctl start apache2.service
 sudo systemctl enable apache2.service
 #
 sudo ufw app list
-sudo ufw app info "Apache Full"
-sudo ufw allow in "Apache Full"
+sudo ufw allow in 80
+sudo ufw allow in 443
 #
 echo "=================================="
 echo "installing mySQL :"
 echo "=================================="
 sudo apt-get install mariadb-server mariadb-client
-#
+# if Ubuntu 18.04+
 sudo systemctl stop mariadb.service
 sudo systemctl start mariadb.service
 sudo systemctl enable mariadb.service
+# if Ubuntu 16.04+
+sudo systemctl stop mysql.service
+sudo systemctl start mysql.service
+sudo systemctl enable mysql.service
 #
 sudo mysql_secure_installation
 #
 sudo systemctl restart mysql.service
 #
-sudo apt update -y && sudo apt upgrade -y
-sudo apt-get update && sudo apt-get upgrade
+sudo apt update
+sudo apt upgrade -y
+sudo apt-get update 
+sudo apt-get upgrade -y
 #
 echo "=================================="
 echo "installing PHP 7.4 + modules"
 echo "=================================="
-sudo apt install php7.4 libapache2-mod-php7.4 php7.4-common php7.4-mbstring php7.4-xmlrpc php7.4-soap php7.4-gd php7.4-xml php7.4-intl php7.4-mysql php7.4-cli php7.4-zip php7.4-curl php7.4-pdo php7.4-tokenizer php7.4-bcmath php7.4-fpm php7.4-imagick php7.4-tidy tar redis-server sed composer
+sudo apt install -y php7.4 libapache2-mod-php7.4 php7.4-common php7.4-mbstring php7.4-xmlrpc php7.4-soap php7.4-gd php7.4-xml php7.4-intl php7.4-mysql php7.4-cli php7.4-zip php7.4-curl php7.4-pdo php7.4-tokenizer php7.4-bcmath php7.4-fpm php7.4-imagick php7.4-tidy tar redis-server sed composer
 sudo systemctl restart apache2.service
 #
 echo "=================================="
 echo "Install and Secure phpMyAdmin"
 echo "=================================="
-sudo apt update -y && sudo apt upgrade -y
-sudo apt-get update && sudo apt-get upgrade
-sudo apt-get install phpmyadmin php-gettext
+sudo apt update
+sudo apt upgrade -y
+sudo apt-get update 
+sudo apt-get upgrade -y
+sudo apt-get install -y phpmyadmin php7.4-gettext
 #
 echo "=================================="
 echo "Update php.ini file "
@@ -90,30 +101,25 @@ sudo a2enmod rewrite
 sudo systemctl restart apache2.service
 systemctl restart apache2
 #
-sudo apt update -y && sudo apt upgrade -y
-sudo apt-get update && sudo apt-get upgrade -y
+add-apt-repository -r ppa:ondrej/php -y
+add-apt-repository -r ppa:phpmyadmin/ppa -y
+add-apt-repository -r ppa:webupd8team/java -y
+#
+sudo apt update
+sudo apt upgrade -y
+sudo apt-get update 
+sudo apt-get upgrade -y
 #
 echo "=================================="
 echo "Installing nodeJS"
 echo "=================================="
-sudo curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-sudo apt-get -y install gcc g++ make nodejs
-curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt-get update -y && sudo apt-get install yarn
-#
-echo "=================================="
-echo "Installing Let's Encrypt Crt"
-echo "=================================="
-sudo certbot --apache -d $domain
-#
-sudo certbot renew --dry-run
+sudo apt-get install -y gcc g++ make nodejs npm 
 #
 sudo apt update -y && sudo apt upgrade -y
 sudo apt-get update && sudo apt-get upgrade -y
 sudo systemctl restart apache2.service
 #
-clear
+#clear
 #
 echo "your PHP Ver is :"
 php -v 
