@@ -8,7 +8,7 @@
 
 انسخ الامر التالي وقم بوضعه في الوحدة الطرفية :
 
-`sudo wget https://git.io/fARE7 -O ubuntu_script.sh`
+`sudo wget https://git.io/fARE7 -O ubuntu_script.sh && chmod +x ubuntu_script.sh`
 
 
 ## لتشغيل السكربت :
