@@ -58,7 +58,7 @@ sudo ufw allow in 443
 echo "=================================="
 echo "installing mySQL :"
 echo "=================================="
-sudo apt-get install mariadb-server mariadb-client
+sudo apt-get -y install mariadb-server mariadb-client
 # if Ubuntu 18.04+
 sudo systemctl stop mariadb.service
 sudo systemctl start mariadb.service
