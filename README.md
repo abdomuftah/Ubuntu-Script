@@ -37,7 +37,7 @@
 
 ## فيديو الشرح : 
 
-<a href="https://www.youtube.com/watch?v=ptLtiTAfc_A">
+<a href="https://www.youtube.com/watch?v=EKbMSxMMIvk&ab_channel=ScarNaruto">
 <img alt="FirstTimeOnly" src="https://i.ytimg.com/vi/ptLtiTAfc_A/hqdefault.jpg?sqp=-oaymwEjCPYBEIoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBKgN3q0qmToaRzY5v80LjgpprOtA" />
 </a>
 
@@ -82,6 +82,6 @@ After Finish installing add this commands to enable phpMyAdmin :
 
 ## video tutorial : 
 
-<a href="https://www.youtube.com/watch?v=ptLtiTAfc_A">
+<a href="https://www.youtube.com/watch?v=EKbMSxMMIvk&ab_channel=ScarNaruto">
 <img alt="FirstTimeOnly" src="https://i.ytimg.com/vi/ptLtiTAfc_A/hqdefault.jpg?sqp=-oaymwEjCPYBEIoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBKgN3q0qmToaRzY5v80LjgpprOtA" />
 </a>
