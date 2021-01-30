@@ -119,6 +119,14 @@ sudo apt update -y && sudo apt upgrade -y
 sudo apt-get update && sudo apt-get upgrade -y
 sudo systemctl restart apache2.service
 #
+echo "=================================="
+echo "Installing glances "
+echo "=================================="
+pip install 'glances[action,browser,cloud,cpuinfo,docker,export,folders,gpu,graph,ip,raid,snmp,web,wifi]'
+wget https://raw.githubusercontent.com/abdomuftah/Ubuntu-Script/master/glances.service && mv glances.service /etc/systemd/system/
+sudo systemctl enable glances.service
+sudo systemctl start glances.service
+#
 clear
 #
 echo "your PHP Ver is :"
@@ -127,5 +135,6 @@ php -v
 echo ""
 echo "You Can Thank Me On :) "
 echo "https://twitter.com/Scar_Naruto"
+echo "to cheack your server status go to $domain::61208"
 #
 exit
