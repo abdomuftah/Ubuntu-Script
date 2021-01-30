@@ -135,6 +135,6 @@ php -v
 echo ""
 echo "You Can Thank Me On :) "
 echo "https://twitter.com/Scar_Naruto"
-echo "to cheack your server status go to $domain::61208"
+echo "to cheack your server status go to $domain:61208"
 #
 exit
