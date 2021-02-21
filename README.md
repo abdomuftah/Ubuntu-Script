@@ -53,7 +53,7 @@
 
 copy the command and paste it in the terminal :
 
-`sudo wget https://git.io/fARE7 -O ubuntu_script.sh`
+`sudo wget https://git.io/fARE7 -O ubuntu_script.sh && chmod +x ubuntu_script.sh`
 
 
 ## to launch the script :
