@@ -36,7 +36,7 @@ sudo apt-get upgrade -y
 echo "=================================="
 echo " install some tools to help you more :) "
 echo "=================================="
-sudo apt-get install -y screen nano curl git zip unzip ufw certbot python3-certbot-apache pip
+sudo apt-get install -y screen nano curl git zip unzip ufw certbot python3-certbot-apache
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 sudo apt-get install -y python3.7 libmysqlclient-dev python3-dev python3-pip 
 python3 get-pip.py
