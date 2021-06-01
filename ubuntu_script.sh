@@ -104,6 +104,8 @@ systemctl restart apache2
 add-apt-repository -r ppa:ondrej/php -y
 add-apt-repository -r ppa:phpmyadmin/ppa -y
 add-apt-repository -r ppa:webupd8team/java -y
+add-apt-repository -r ppa:chris-lea/redis-server
+add-apt-repository -r ppa:deadsnakes/ppa
 #
 sudo apt update
 sudo apt upgrade -y
